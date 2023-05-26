@@ -3,7 +3,7 @@ Reenables enemy silhouettes on OpenGLCore for ULTRAKILL.
 
 ## NOTICE
 
-These were disabled for a reason, and give up to a **50% performance loss in some situations. Use at your own risk.**
+These were disabled for a reason. **Use at your own risk.**
 
 ![20230525_21h48m48s_grim](https://github.com/coatlessali/GLCoreScissors/assets/61166135/f2741a9f-1ff4-4888-8bcb-a0a77ee75fdd)
 
