@@ -22,24 +22,26 @@ namespace GLCoreScissors
 			har.PatchAll();
 		}
 	}
-	
+
+	// Patching the GLCoreBandaid function
 	[HarmonyPatch(typeof(GLCoreBandaid), nameof(GLCoreBandaid.OnEnable))]
 	class GLCoreScissors : MonoBehaviour
 	{	
-		// private string videoName;
-		
 		static void Postfix(ref GameObject ___optionsToHide, ref GameObject ___dialogToShow)
 		{
+			// Reenable toggles
 			___optionsToHide.SetActive(true);
 			___dialogToShow.SetActive(false);
 		}
 	}
 
+	// Patching PostProcessV2_Handler
 	[HarmonyPatch(typeof(PostProcessV2_Handler), nameof(PostProcessV2_Handler.Start))]
 	class EnableOutlines : MonoSingleton<PostProcessV2_Handler>
 	{
 		static void Postfix()
 		{
+			// As of now, this just enables the outlines unconditionally, fix needed
 			Shader.DisableKeyword("NOOUTLINES");
 		}
 	}
