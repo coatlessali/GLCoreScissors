@@ -5,7 +5,7 @@ Reenables enemy silhouettes on OpenGLCore for ULTRAKILL.
 
 These were disabled for a reason. **Use at your own risk.**
 
-quote from Victoria goes here
+![20230525_21h48m48s_grim](https://github.com/coatlessali/GLCoreScissors/assets/61166135/f2741a9f-1ff4-4888-8bcb-a0a77ee75fdd)
 
 ## Installation
 
