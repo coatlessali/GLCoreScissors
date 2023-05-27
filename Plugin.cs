@@ -33,7 +33,7 @@ namespace GLCoreScissors
 
 			// Load Plugin
 			Instance = this;
-			Logger.LogInfo("This is going to cause memory leaks. You have been warned.");
+			Logger.LogInfo("Loading Plugin... Restart required after settings toggle.");
 			Harmony har = new Harmony("com.coatlessali.glcorescissors");
 			har.PatchAll();
 		}
