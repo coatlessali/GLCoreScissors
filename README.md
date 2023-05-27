@@ -15,6 +15,10 @@ Copy/move `GLCoreScissors.dll` to your BepInEx plugins directory.
 
 Remove `GLCoreScissors.dll` from your BepInEx plugins directory.
 
+## Usage
+
+Enable the enemy silhouettes checkbox in the Assist options. **Requires a restart to toggle properly.**
+
 ## Building
 
 Note: I don't use Visual Studio, so I have no clue how to compile this on Windows, though using `msbuild` should be possible. As for MacOS, the file structure is different, but by editing the .csproj file to have correct file names, you should be able to build it with `msbuild`, just like Linux, assuming you have Mono installed.
