@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 
 namespace GLCoreScissors
 {
-	[BepInPlugin("com.coatlessali.glcorescissors", "GLCoreScissors", "1.0.0")]
+	[BepInPlugin("com.coatlessali.glcorescissors", "GLCoreScissors", "1.1.0")]
 	public class Plugin : BaseUnityPlugin
 	{
 		public static Plugin Instance;
