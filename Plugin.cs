@@ -10,14 +10,14 @@ using UnityEngine.SceneManagement;
 
 namespace GLCoreScissors
 {
-	[BepInPlugin("com.coatlessali.glcorescissors", "GLCoreScissors", "1.1.0")]
+	[BepInPlugin("com.coatlessali.glcorescissors", "GLCoreScissors", "1.1.1")]
 	public class Plugin : BaseUnityPlugin
 	{
 		public static Plugin Instance;
 		private void Awake()
 		{
 			// MacOS is special once again
-			string funny = (Application.platform == RuntimePlatform.OSXPlayer) ? "../../.." : "..";
+			string funny = (Application.platform == RuntimePlatform.OSXPlayer) ? "../.." : "..";
 			// Name of original Prefs file
 			string fileName = Path.Combine(Application.dataPath, funny, "Preferences", "Prefs.json");
 			// Name of new copy
@@ -58,7 +58,7 @@ namespace GLCoreScissors
 		static void Postfix()
 		{
 			// once again checking for MacOS and handling it accordingly
-			string funny = (Application.platform == RuntimePlatform.OSXPlayer) ? "../../.." : "..";
+			string funny = (Application.platform == RuntimePlatform.OSXPlayer) ? "../.." : "..";
 			// get the copy of the .json file we made earlier
 			string fileName = Path.Combine(Application.dataPath, funny, "Preferences", "GLCoreScissors.json");
 			// reading all of the text...? uh, okay moving on
