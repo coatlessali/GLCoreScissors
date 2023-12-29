@@ -1,5 +1,5 @@
 # GLCoreScissors
-Reenables enemy silhouettes on OpenGLCore for ULTRAKILL.
+Reenables enemy silhouettes on OpenGLCore for ULTRAKILL. (Broken since at least ULTRAKILL patch 14b.)
 
 ## NOTICE
 
