@@ -1,9 +1,9 @@
 # GLCoreScissors
-Reenables enemy silhouettes on OpenGLCore for ULTRAKILL. (Broken since at least ULTRAKILL patch 14b.)
+Reenables enemy silhouettes on OpenGLCore for ULTRAKILL.
 
 ## NOTICE
 
-These were disabled for a reason. Bugs are particularly noticable on Zink, LLVMpipe, and Nouveau. **Use at your own peril.**
+These were disabled for a reason. I personally can't replicate any noticable issues, but still. **Use at your own peril.**
 
 ![20230525_21h48m48s_grim](https://github.com/coatlessali/GLCoreScissors/assets/61166135/f2741a9f-1ff4-4888-8bcb-a0a77ee75fdd)
 
@@ -17,11 +17,11 @@ Remove `GLCoreScissors.dll` from your BepInEx plugins directory.
 
 ## Usage
 
-Enable the enemy silhouettes checkbox in the Assist options. **Requires a restart to toggle properly.**
+Enable the enemy silhouettes checkbox in the Assist options. Moving the slider tanks the framerate, so set it once and then restart the game.
 
 ## Building
 
-Note: I don't use Visual Studio, so I have no clue how to compile this on Windows, though using `msbuild` should be possible. As for MacOS, the file structure is different, but by editing the .csproj file to have correct file names, you should be able to build it with `msbuild`, just like Linux, assuming you have Mono installed.
+Note: I don't use Visual Studio, so I have no clue how to compile this on Windows, though using `msbuild` should be possible.
 
 ### Dependencies
 
